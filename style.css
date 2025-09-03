@@ -365,7 +365,7 @@ h3{
   text-align: center;
   font-weight: 600;
   color: var(--text-color-second);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .projects-img {
   height: 200px;
@@ -376,15 +376,108 @@ h3{
   padding: 1.5rem;
 }
 .text-projects {
-  color: ;
+  color: var(--text-color-second);
   line-height: 1.25rem;
 }
 .info-projects {
+  color: var(--third-color);
   margin-bottom: 5px;
 }
 
 
 
+.contact-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  width: 100%;
+  height: 315px;
+  background: var(--second-color);
+  border-radius: 10px;
+  box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+  overflow: hidden;
+}
+.contact-info>h2{
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+.contact-info>p{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-white);
+  margin-block: 5px;
+}
+.contact-info p>i {
+  font-size: 18px;
+}
+.contact-info::after {
+  background: var(--color-white);
+
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  background: var(--second-color);
+  width: 100%;
+  height: 100%;
+  transition: .4s;
+  z-index: 1;
+}
+.contact-info:hover.contact-info h2,
+.contact-info:hover.contact-info p,
+.contact-info:hover.contact-info i {
+  color: #777;
+  z-index: 2;
+}
+
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.form-inputs{
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+.input-field{
+  width: 50%;
+  height: 55px;
+  background: transparent;
+  border: 2px solid #aaa;
+  border-radius: 10px;
+  padding-inline: 20px;
+  outline: none;
+}
+textarea{
+  width: 100%;
+  height: 250px;
+  background: transparent;
+  border: 2px solid #aaa;
+  border-radius: 10px;
+  padding: 15px 20px;
+  outline: none;
+  resize: none;
+}
+.form-button>.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--second-color);
+  color: var(--color-white);
+}
+.form-button>.btn:hover {
+  background: #00B5E7;
+}
+.form-button i{
+  font-size: 18px;
+  rotate: -45deg;
+}
 
 
 @media only screen and (max-width: 1024px) {
@@ -394,6 +487,12 @@ h3{
   .image, .image img {
     width: 320px;
     height: 320px;
+  }
+  .form-inputs {
+    flex-direction: column;
+  }
+  .input-field {
+    width: 100%;
   }
 }
 
@@ -454,5 +553,34 @@ h3{
     width: 150px;
     height: 150px;
   }
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+  }
+  .col {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .about-info {
+    width: 100%;
+  }
+  .project-box {
+    justify-content: center;
+  }
+  .project-card {
+    width: 80%;
+  }
+}
 
+
+@media only screen and (max-width:540px){
+  .featured-name {
+    font-size: 40px;
+  }
+  .project-card {
+    width: 100%;
+  }
 }

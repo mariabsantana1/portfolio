@@ -339,6 +339,52 @@ h3{
 
 
 
+.projects {
+  padding: 6rem 2rem;
+}
+.projects-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+}
+.projects-card {
+  background: rgba(100, 100, 100, 0.055);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.projects-card:hover {
+  box-shadow: 0 10px 20px var(--third-color);
+  background: var(--first-shadow-color);
+  transform: translateY(-10px) scale(1);
+}
+.projects-title {
+  text-align: center;
+  font-weight: 600;
+  color: var(--text-color-second);
+  margin-bottom: 10px;
+}
+.projects-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.box-text-projects {
+  padding: 1.5rem;
+}
+.text-projects {
+  color: ;
+  line-height: 1.25rem;
+}
+.info-projects {
+  margin-bottom: 5px;
+}
+
+
+
 
 
 @media only screen and (max-width: 1024px) {

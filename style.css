@@ -535,12 +535,6 @@ footer {
     width: 320px;
     height: 320px;
   }
-  .form-inputs {
-    flex-direction: column;
-  }
-  .input-field {
-    width: 100%;
-  }
 }
 
 
@@ -611,7 +605,7 @@ footer {
     justify-content: center;
     width: 100%;
   }
-  .about-info {
+  .about-info .contact-info {
     width: 100%;
   }
   .project-box {
@@ -628,6 +622,12 @@ footer {
     font-size: 40px;
   }
   .project-card {
+    width: 100%;
+  }
+  .form-inputs {
+    flex-direction: column;
+  }
+  .input-field {
     width: 100%;
   }
 }
